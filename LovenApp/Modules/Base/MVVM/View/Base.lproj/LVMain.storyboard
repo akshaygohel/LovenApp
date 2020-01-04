@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MYa-sM-H17">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="xzy-Vq-pvV">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="MYa-sM-H17" sceneMemberID="viewController">
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xBU-k6-mdA">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="esO-hN-Yil" kind="relationship" relationship="rootViewController" id="f68-w6-gnz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xBA-rF-yrE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-665" y="-45"/>
+        </scene>
+        <!--Loven-->
+        <scene sceneID="hWi-sL-eZl">
+            <objects>
+                <viewController id="esO-hN-Yil" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JHl-np-PzB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mvb-gB-J2C">
+                                <rect key="frame" x="136" y="411" width="142" height="74"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="74" id="7wB-Bq-gun"/>
+                                    <constraint firstAttribute="width" constant="142" id="igD-Bt-b05"/>
+                                </constraints>
+                                <state key="normal" title="Show Public Profile"/>
+                                <connections>
+                                    <segue destination="aEe-qA-pvv" kind="show" id="L5v-IK-IPm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="mvb-gB-J2C" firstAttribute="centerY" secondItem="JHl-np-PzB" secondAttribute="centerY" id="T5v-ha-J0n"/>
+                            <constraint firstItem="mvb-gB-J2C" firstAttribute="centerX" secondItem="JHl-np-PzB" secondAttribute="centerX" id="aFH-5v-9G4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wvm-Bc-U4n"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Loven" id="FwW-Ne-Zud"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bue-ft-fBu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="189.85507246376812" y="-46.205357142857139"/>
+        </scene>
+        <!--LVPublicProfileStoryboard-->
+        <scene sceneID="vAK-WZ-R3I">
+            <objects>
+                <viewControllerPlaceholder storyboardName="LVPublicProfileStoryboard" id="aEe-qA-pvv" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="dev-V7-M3F"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="chv-AX-7rj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="974" y="-48"/>
+        </scene>
+    </scenes>
+</document>
